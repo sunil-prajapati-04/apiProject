@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 4rem;
+            margin-top: 2.5vh;
+        }
+        #city{
+            width: 30%;
+            height: 4rem;
+            font-size:1rem;
+            padding: 6px;
+            position: relative;
+            left: 35%;
+            margin-top: 2vw;
+            border: 1px solid rgb(7, 10, 95);
+            border-radius: 9px;
+            background-color: rgb(199, 185, 166);
+        }
+        #search{
+            padding: 12px;
+            font-size: 0.7rem;
+            position: relative;
+            left: 40%;
+            margin-top: 2vh;
+            border: 1px solid rgb(7, 10, 95);
+            background-color: burlywood;
+            border-radius: 9px;
+            width: 10%;
+            cursor: pointer;
+        }
+        #weather{
+            width: 60%;
+            max-height: 100%;
+            background-color: rgba(6, 6, 82, 0.87);
+            padding: 10px;
+            position: relative;
+            border: 1px solid rgb(187, 187, 187);
+            border-radius: 6px;
+            left: 20%;
+            margin-top:3vw ;
+            display: none;
+        }
+        #listData{
+            list-style: none;
+            list-style-position: inside;
+            padding: 10px;
+            color: rgb(241, 236, 236);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        #cityName{
+            font-size: 2rem;
+            color: rgb(231, 224, 224);
+            font-weight: 900;
+            position: relative;
+            left:0.8rem;
+            text-decoration: dashed;
+            text-transform: capitalize;
+        }
+        #li{
+            line-height: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Dashborad</h1>
+    <input type="text" id="city" placeholder="Enter city name">
+    <button id="search">Search</button>
+    <div id="weather">
+        <h3 id="cityName"></h3>
+        <ul id="listData">
+
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>

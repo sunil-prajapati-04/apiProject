@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        css{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+        h1{
+           text-align: center;
+           margin: 20px;
+           color: rgb(60, 11, 11);
+           text-shadow: 10px 7px 8px black ;
+           /* text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; */
+        }
+        #btn{
+            background-color: rgb(33, 51, 51);
+            color: beige;
+            padding: 12px;
+            border-radius: 10px;
+            position: relative;
+            width: 120px;
+            left: 45%;
+            margin-top: 1vh;
+            cursor: pointer;
+            box-shadow:8px 10px 15px rgba(0, 0, 0, 0.705);
+        }
+        #img{
+            width: 55%;
+            height: 60vh;
+            margin: 3vw;
+            border: 1px solid rgb(15, 15, 58);
+            border-radius: 8px;
+            position: relative;
+            left: 20%;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 12px 12px 9px rgba(7, 7, 48, 0.929);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get Rnadom Dog Image</h1>
+    <button  id="btn">Generate</button>
+    <img id="img">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="dog.js"></script>
+</body>
+</html>

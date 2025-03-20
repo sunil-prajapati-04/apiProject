@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Todo</title>
+    <style>
+        css{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: rgba(22, 22, 53, 0.801); */
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(22, 22, 53, 0.801);
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 500;
+            color: rgb(6, 183, 183);
+            /* text-shadow: 12px 12px 8px rgb(6, 89, 89); */
+            margin-top: 2.3rem;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 2rem; */
+            
+        }
+        #todoType{
+            width: 50%;
+            max-height: 100%;
+            padding: 10px;
+            position: relative;
+            left: 25%;
+            color: rgba(22, 22, 53, 0.801);
+            background-color: rgb(170, 165, 157);
+            border-radius: 8px;
+        }
+        #addbtn{
+            width: 8vw;
+            height: 10vh;
+            padding: 12px;
+            font-size: 1.8rem;
+            background-color: rgb(139, 218, 139);
+            color: rgba(0, 0, 0, 0.815);
+            border: 1px solid black;
+            border-radius: 7px;
+            margin: 10px;
+            position: relative;
+            cursor: pointer;
+            left: 25%;
+            /* box-shadow: 12px 12px 8px rgb(31, 27, 27); */
+        }
+        #delbtn,#modbtn{
+            width: 8vw;
+            height: 6vh;
+            padding: 12px;
+            font-size: 1rem;
+            background-color: rgb(223, 8, 44);
+            color: rgba(0, 0, 0, 0.815);
+            border: 1px solid black;
+            border-radius: 7px;
+            margin: 10px;
+            position: relative;
+            cursor: pointer;
+            left: 25%;
+            /* box-shadow: 12px 12px 8px rgb(31, 27, 27); */
+        }
+       
+        #todoList{
+            list-style: decimal;
+            list-style-position: inside;
+            color: rgb(19, 19, 98);
+            background-color: antiquewhite;
+            padding: 10px;
+            border: 1px solid rgb(6, 6, 54);
+            border-radius: 8px;
+            /* box-shadow: 12px 12px 8px rgb(31, 27, 27); */
+            max-height: 100%;
+            width: 60%;
+            position: relative;
+            left: 25%;
+            display: none;
+        }
+        li{
+            padding: 10px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+  
+    <input type="text" id="todoType" placeholder="Type your todo here">
+    <button id="addbtn">Add</button>
+    <ul id="todoList">
+
+    </ul>
+    <script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #country{
+            width: 150px;
+            height: 30px;
+            padding: 12px;
+            border: 1px solid rgb(15, 15, 55);
+            border-radius: 5px;
+            position: relative;
+            left: 42%;
+            margin: 2vh;
+        }
+        #btn{
+            display: block;
+            background-color: rgb(33, 51, 51);
+            color: beige;
+            padding: 12px;
+            border-radius: 10px;
+            position: relative;
+            width: 120px;
+            left: 45%;
+            margin-top: 5vh;
+            cursor: pointer;
+            box-shadow:8px 10px 15px rgba(0, 0, 0, 0.705);
+        }
+        #list{
+            list-style-type:decimal;
+            list-style-position: inside;
+            padding: 10px;
+            margin-top: 5vh;
+            border: 1px solid rgb(15, 15, 55);
+            border-radius: 5px;
+            max-height: 100%;
+            width: 70%;
+            position: relative;
+            left: 18%;
+            display: none;
+            box-shadow:8px 10px 15px rgba(0, 0, 0, 0.705);
+        }
+        #list li{
+            padding: 10px;
+            font-size: 1.5rem;
+            color: #1d0831;;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="country" placeholder="enter country name">
+    <button id="btn">Search</button>
+    <ul id="list"></ul>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="clg.js"></script>
+</body>
+</html>
